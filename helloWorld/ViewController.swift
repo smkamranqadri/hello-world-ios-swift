@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var background: UIImageView!
 
+    @IBOutlet weak var text: UIImageView!
+    
+    @IBOutlet weak var welcomeBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func welcomeAction(_ sender: AnyObject) {
+
+            background.isHidden = false
+            text.isHidden = false
+            welcomeBtn.isHidden = true
+    }
 
 }
 
